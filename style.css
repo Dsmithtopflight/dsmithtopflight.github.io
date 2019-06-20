@@ -5,14 +5,20 @@
 	lights to Dark FFFFFF, B2B9BF, 405971, 102F4D
 	
 	*/
-
+body, html{
+	height: 100%;
+}
 body{
-	background-size: cover;
+	/*background-size: cover;*/
 	background-repeat: no-repeat;
 	background-image: linear-gradient(#C2C9BF, #708090, #C2C9BF);
 	color: #102F4D;
-	justify-content: center;
 	padding: 10px;
+	/*float: all;*/
+}
+
+.page-footer{
+	margin-top: 20px;
 }
 
 .navbar{
@@ -31,14 +37,8 @@ img .me2close{
 	float: right;
 }
 
-.container-fluid{
-	display: block;
-	justify-content: center;
-	border: 1px solid grey;
+.resumeContainer{
 	padding: 10px;
-	margin: 5px;
-	flex-wrap: wrap;
-	text-align: left;
 }
 
 .lifePic{
@@ -55,7 +55,7 @@ img .me2close{
 	font-weight: bold;
 }
 
-.jumbotron{
+.jumbotron{/
 	background-color: transparent;
 	color: white;
 }
@@ -69,11 +69,10 @@ img .me2close{
 
 .contactForm{
 	display: block;
-	align-items: right;
-	justify-content: right;
-	padding-top: 20px;/*
+	text-align: right;
+	padding-top: 20px;
 	margin-left: auto;
-	margin-right: auto;*/
+	margin-right: auto;
 	height: 250px;
 	width: auto;
 	background-color: transparent;
@@ -85,15 +84,36 @@ img .me2close{
 	align-items: center;
 }
 
-input .contactForm{
-	/*align-items: */
+#carouselExampleIndicators{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	max-height: 400px;
 }
 
-#carouselExampleIndicators{
-	width: 600px;
-	/*height: 400px;
-	display: flex;
-	justify-content: space-around;*/
+.filterButtons{
+	display: inline-flex;/*
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+.btn-primary{
+	margin: 2px;
+	border: 2px solid;
+	border-color: transparent;
+}
+
+.resumeContainer{
+	overflow: hidden;
+}
+
+.filterDiv{
+	float: left;
+	display: none;
+}
+
+.show{
+	display: block;
 }
 
 .wrapper{
@@ -110,6 +130,9 @@ input .contactForm{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			font-size: 150%;
+			font-weight: bold;
+			font-family: rockwell;
 }
 
 .wrapper > div:nth-child(1) {
